@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2DBA19324CDD83B5F0F115B8 /* LOTAnimationView_Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DBA16351B4FA408937A16CE /* LOTAnimationView_Compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30A1F7F11F5E7F6300AA3682 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A1F7F01F5E7F6300AA3682 /* CoreGraphics.framework */; };
+		30A1F7F31F5E7F6900AA3682 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A1F7F21F5E7F6900AA3682 /* QuartzCore.framework */; };
+		30A1F7F71F5E811E00AA3682 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A1F7F61F5E811E00AA3682 /* UIKit.framework */; };
+		30A1F7F91F5E81E200AA3682 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A1F7F81F5E81E200AA3682 /* GLKit.framework */; };
 		48183C9C1E54E20B0039F121 /* CGGeometry+LOTAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 48183C9A1E54E20B0039F121 /* CGGeometry+LOTAdditions.h */; };
 		48183C9D1E54E20B0039F121 /* CGGeometry+LOTAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 48183C9A1E54E20B0039F121 /* CGGeometry+LOTAdditions.h */; };
 		48183C9E1E54E20B0039F121 /* CGGeometry+LOTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48183C9B1E54E20B0039F121 /* CGGeometry+LOTAdditions.m */; };
@@ -306,6 +310,10 @@
 
 /* Begin PBXFileReference section */
 		2DBA16351B4FA408937A16CE /* LOTAnimationView_Compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationView_Compat.h; sourceTree = "<group>"; };
+		30A1F7F01F5E7F6300AA3682 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		30A1F7F21F5E7F6900AA3682 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		30A1F7F61F5E811E00AA3682 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		30A1F7F81F5E81E200AA3682 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		48183C9A1E54E20B0039F121 /* CGGeometry+LOTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+LOTAdditions.h"; sourceTree = "<group>"; };
 		48183C9B1E54E20B0039F121 /* CGGeometry+LOTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+LOTAdditions.m"; sourceTree = "<group>"; };
 		481A4A3C1E4A7885003CF62B /* LOTHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTHelpers.h; sourceTree = "<group>"; };
@@ -430,6 +438,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A1F7F91F5E81E200AA3682 /* GLKit.framework in Frameworks */,
+				30A1F7F71F5E811E00AA3682 /* UIKit.framework in Frameworks */,
+				30A1F7F31F5E7F6900AA3682 /* QuartzCore.framework in Frameworks */,
+				30A1F7F11F5E7F6300AA3682 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +462,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30A1F7EF1F5E7F6300AA3682 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30A1F7F81F5E81E200AA3682 /* GLKit.framework */,
+				30A1F7F61F5E811E00AA3682 /* UIKit.framework */,
+				30A1F7F21F5E7F6900AA3682 /* QuartzCore.framework */,
+				30A1F7F01F5E7F6300AA3682 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		481A4A171E4A7885003CF62B /* AnimatableLayers */ = {
 			isa = PBXGroup;
 			children = (
@@ -650,6 +673,7 @@
 			children = (
 				62CA59BA1E3C173B002D7188 /* Lottie */,
 				62CA59B91E3C173B002D7188 /* Products */,
+				30A1F7EF1F5E7F6300AA3682 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
