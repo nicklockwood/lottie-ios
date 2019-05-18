@@ -1336,10 +1336,11 @@
 			};
 			buildConfigurationList = 62CA59B21E3C173B002D7188 /* Build configuration list for PBXProject "Lottie" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 62CA59AE1E3C173B002D7188;
 			productRefGroup = 62CA59B91E3C173B002D7188 /* Products */;
