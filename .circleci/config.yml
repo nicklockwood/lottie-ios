@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    macos:
+      xcode: "10.3.0"
+
+    steps:
+      - checkout
+
+      - run:
+          name: Build
+          command: fastlane run xcodebuild clean:true build:true scheme:"Lottie" destination:"generic/platform=iOS"
+
+      - store_artifacts:
+          path: ~/Library/Logs/fastlane
+          destination: fastlane-logs
